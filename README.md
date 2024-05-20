@@ -46,6 +46,10 @@ To Start Server:
 
 `npm run start`
 
+To Start Dev Server:
+
+`npm run dev`
+
 To Access API on:
 
 `http://localhost:3000`
