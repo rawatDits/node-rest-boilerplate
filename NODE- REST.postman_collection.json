@@ -1,0 +1,627 @@
+{
+	"info": {
+		"_postman_id": "1dd1cd28-3ce4-40ff-aeda-c479896cfbda",
+		"name": "NODE- REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34888465"
+	},
+	"item": [
+		{
+			"name": "ROLE",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}roles",
+							"host": [
+								"{{url}}roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"User\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}roles",
+									"host": [
+										"{{url}}roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-ERQBEtQmutN5qAKtoFmGnFeBi6w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:23:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role Created succesfully.\",\n    \"data\": {\n        \"name\": \"User\",\n        \"_id\": \"eNQX1G1HI3gkSmCOHVxVF\",\n        \"__v\": 0\n    },\n    \"status\": true,\n    \"error\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}roles",
+							"host": [
+								"{{url}}roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}roles",
+									"host": [
+										"{{url}}roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"81-yujT9InfmH8/oW2T7kUJh9I1Zc8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:24:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Role fetched succesfully.\",\n    \"data\": [\n        {\n            \"_id\": \"eNQX1G1HI3gkSmCOHVxVF\",\n            \"name\": \"User\",\n            \"__v\": 0\n        }\n    ],\n    \"status\": true,\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\":\"Ranjana\",\n    \"lastname\": \"Rawat\",\n    \"email\":\"ranjana@gmail.com\",\n    \"password\":\"123456\",\n    \"role\":\"User\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}users",
+							"host": [
+								"{{url}}users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstname\":\"Ranjana\",\n    \"lastname\": \"Rawat\",\n    \"email\":\"ranjana@gmail.com\",\n    \"password\":\"123456\",\n    \"role\":\"User\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}users",
+									"host": [
+										"{{url}}users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-MhyS9xeksfcs0TuLuyHgKAJcD4o\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:29:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created succesfully!\",\n    \"data\": {\n        \"firstname\": \"Ranjana\",\n        \"lastname\": \"Rawat\",\n        \"email\": \"ranjana@gmail.com\",\n        \"password\": \"$2b$10$WcOImD5G/9Ug8zVqlDoTI.bbTrpJG8sP8hbnPbbJvrAYNnJPCNz0a\",\n        \"role\": \"User\",\n        \"image\": null,\n        \"_id\": \"ngLhtocNBu_2upnCYgdyW\",\n        \"__v\": 0\n    },\n    \"status\": true,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}users",
+							"host": [
+								"{{url}}users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}users",
+									"host": [
+										"{{url}}users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "291"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"123-bcCxRIqtddIW1yqoutLFcH+uGGw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:29:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All Users Fetched Successfully!\",\n    \"data\": [\n        {\n            \"_id\": \"ngLhtocNBu_2upnCYgdyW\",\n            \"firstname\": \"Ranjana\",\n            \"lastname\": \"Rawat\",\n            \"email\": \"ranjana@gmail.com\",\n            \"password\": \"$2b$10$WcOImD5G/9Ug8zVqlDoTI.bbTrpJG8sP8hbnPbbJvrAYNnJPCNz0a\",\n            \"role\": \"User\",\n            \"image\": null,\n            \"__v\": 0\n        }\n    ],\n    \"status\": true,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = JSON.parse(responseBody);",
+									"const token = jsonData.data.token;",
+									"// console.log(\"token\", token)",
+									" pm.collectionVariables.set(\"token\",token)",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"raawatt@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}users/login",
+							"host": [
+								"{{url}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"ranjana@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}users/login",
+									"host": [
+										"{{url}}users"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f8-+YQH+IJiopm7fwI5D5sex/XnOuQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:36:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Fetched successfully!\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"ngLhtocNBu_2upnCYgdyW\",\n            \"firstname\": \"Ranjana\",\n            \"lastname\": \"Rawat\",\n            \"email\": \"ranjana@gmail.com\",\n            \"password\": \"$2b$10$WcOImD5G/9Ug8zVqlDoTI.bbTrpJG8sP8hbnPbbJvrAYNnJPCNz0a\",\n            \"role\": \"User\",\n            \"image\": null,\n            \"__v\": 0\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im5nTGh0b2NOQnVfMnVwbkNZZ2R5VyIsImVtYWlsIjoicmFuamFuYUBnbWFpbC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxNTg0MTM3MH0.IvZX8I09p4ZK6DK3H8JbWBnV5sA0FiM6RowgcOj7VFI\"\n    },\n    \"status\": true,\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Get profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}profile",
+							"host": [
+								"{{url}}profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"ranjana@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}users/login",
+									"host": [
+										"{{url}}users"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f8-+YQH+IJiopm7fwI5D5sex/XnOuQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 06:36:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Fetched successfully!\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"ngLhtocNBu_2upnCYgdyW\",\n            \"firstname\": \"Ranjana\",\n            \"lastname\": \"Rawat\",\n            \"email\": \"ranjana@gmail.com\",\n            \"password\": \"$2b$10$WcOImD5G/9Ug8zVqlDoTI.bbTrpJG8sP8hbnPbbJvrAYNnJPCNz0a\",\n            \"role\": \"User\",\n            \"image\": null,\n            \"__v\": 0\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im5nTGh0b2NOQnVfMnVwbkNZZ2R5VyIsImVtYWlsIjoicmFuamFuYUBnbWFpbC5jb20iLCJyb2xlIjoiVXNlciIsImlhdCI6MTcxNTg0MTM3MH0.IvZX8I09p4ZK6DK3H8JbWBnV5sA0FiM6RowgcOj7VFI\"\n    },\n    \"status\": true,\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000/",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}
